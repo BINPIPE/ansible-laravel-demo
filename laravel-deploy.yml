@@ -55,3 +55,6 @@
     - name: Run Migrations + Seeders
       command: "/usr/bin/php {{ remote_www_root }}/{{ app_root_dir }}/artisan migrate --seed"
       tags: [ 'laravel', 'artisan:migrate' ]
+      
+    - name: Ensure Nginx is Up
+      service: name=nginx state=started
