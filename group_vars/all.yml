@@ -1,6 +1,6 @@
 ---
 # Initial Server Setup
-remote_user: sammy
+remote_user: ubuntu
 
 # MySQL Setup
 mysql_root_password: MYSQL_ROOT_PASSWORD
